@@ -5,7 +5,7 @@ import Home from "./pages/home/Home";
 import SinglePost from "./components/singlePost/SinglePost";
 import Write from "./pages/write/Write";
 import Register from "./pages/register/Register";
-import {BrowserRouter as BrowserRouter,Routes,Route} from "react-router-dom";
+import {BrowserRouter,Routes,Route} from "react-router-dom";
 import SinglePost1 from "./components/singlePost/SinglePost1";
 import SinglePost2 from "./components/singlePost/SinglePost2";
 import SinglePost3 from "./components/singlePost/SinglePost3";
