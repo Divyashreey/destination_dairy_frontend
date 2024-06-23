@@ -15,6 +15,7 @@ export default function Register() {
     const res= await axios.post("/api/auth/register",{
       username,email,password,
     });
+    console.log(res.data)
     if (res.data) {
       console.log("Hello");
       navigate("/login");
