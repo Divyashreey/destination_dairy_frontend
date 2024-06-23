@@ -16,7 +16,9 @@ export default function Register() {
       username,email,password,
     });
     if (res.data) {
+      console.log("Hello");
       navigate("/login");
+      
     }
   }catch(err){
    setError(true);
