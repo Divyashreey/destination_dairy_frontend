@@ -1,5 +1,5 @@
 import "./register.css";
-import { Link,useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
 export default function Register() {
@@ -7,7 +7,6 @@ export default function Register() {
   const [email,setEmail]=useState("")
   const [password,setPassword]=useState("")
  const[error,setError]=useState(false);
- const navigate=useNavigate();
   const handleSubmit=async (e) =>{
     e.preventDefault();
     setError(false);
@@ -15,12 +14,7 @@ export default function Register() {
     const res= await axios.post("/api/auth/register",{
       username,email,password,
     });
-    console.log(res.data)
-    if (res.data) {
-      console.log("Hello");
-      navigate("/login");
-      
-    }
+    res.data && window.location.replace("/login");
   }catch(err){
    setError(true);
   }
