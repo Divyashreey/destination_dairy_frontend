@@ -5,7 +5,7 @@ import Home from "./pages/home/Home";
 import SinglePost from "./components/singlePost/SinglePost";
 import Write from "./pages/write/Write";
 import Register from "./pages/register/Register";
-import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
+import {BrowserRouter as BrowserRouter,Routes,Route} from "react-router-dom";
 import SinglePost1 from "./components/singlePost/SinglePost1";
 import SinglePost2 from "./components/singlePost/SinglePost2";
 import SinglePost3 from "./components/singlePost/SinglePost3";
@@ -26,10 +26,10 @@ import { Context } from "./context/Context";
 function App() {
   const {user}=useContext(Context);
   return (
-    <Router>
+    <BrowserRouter>
  <Topbar/>
   
-  <Switch>
+  <Routes>
   <Route  exact path="/"> <Home/></Route>
   <Route path="/register"> {user?<Home/>:<Register/>}</Route>
   <Route path="/login">{user?<Home/>:<Login/>}</Route>
@@ -52,9 +52,9 @@ function App() {
         <Route path="/admin" component={Admin} />
      
 
-  </Switch>
+  </Routes>
   
-  </Router>
+  </BrowserRouter>
   );
 }
 
