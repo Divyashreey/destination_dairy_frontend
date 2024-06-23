@@ -15,10 +15,12 @@ export default function Register() {
     const res= await axios.post("/api/auth/register",{
       username,email,password,
     });
+    if (res.data) {
+      navigate("/login");
+    }
   }catch(err){
    setError(true);
   }
-  navigate("/login");
   };
   return (
     <div className='register'>
