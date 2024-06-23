@@ -1,0 +1,84 @@
+.login{
+    height:calc(100vh - 50px);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(213, 198, 198, 0.5),rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1432821596592-e2c18b78144f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+background-size: cover;
+
+
+
+}
+.container-1{
+     display: flex;
+     
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  margin: 50px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border: 3px ;
+  border-radius: 10px;
+  background: transparent;
+  transition: box-shadow 0.3s ease;
+  background-color: rgba(240, 248, 255, 0.659);
+  
+}
+.container-1:hover {
+    box-shadow: 10px 10px 20px rgba(238, 8, 85, 0.2);
+  }
+.loginTitle{
+    font-size: 50px;
+    color:#240b15;
+    font-family: 'Lora';
+}
+.loginForm{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lora',serif;
+}
+.loginForm > label{
+    margin: 10px 0;
+}
+.loginInput{
+    padding: 10px;
+    background-color:rgb(213, 207, 207) ;
+    border: none;
+}
+.loginButton{
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #d51d42;
+    border: 2px solid lightcoral;;
+    color: white;
+    border-radius: 10px;
+    padding:10px;
+}
+.loginButton:disabled{
+    background-color:white ;
+    color:black;
+    cursor:not-allowed;
+}
+.loginButton:hover{
+    background-color:white ;
+    color:black;
+  }
+  .loginRegisterButton{
+    position: absolute;
+    top:80px;
+    right: 40px;
+    background-color:#e17f93 ;
+    cursor: pointer;
+    border: 2px solid lightcoral;;
+    padding:10px;
+    color:white;
+    width: 150px;
+    border-radius: 10px;
+    }
+.loginRegisterButton:hover{
+    background-color:white ;
+    color:black;
+  }

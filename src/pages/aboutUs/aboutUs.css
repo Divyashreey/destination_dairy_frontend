@@ -1,0 +1,18 @@
+/* AboutUs.css */
+
+/* Add your custom styles to AboutUs.css or a separate stylesheet */
+
+.container {
+    background-color: #fff5f8; /* Light pink background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .container:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+ 

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --color-primary:#645fff;
+    --color-white:#fff;
+    --color-red:rgb(255,63,63);
+    --color-gray-100:hsl(220,20%,10%,5%);
+    --color-gray-200:hsl(220,20%,10%,10%);
+    --color-gray-300:hsl(220,20%,10%,25%);
+    --color-gray-500:hsl(220,20%,10%,50%);
+    --color-gray-700:#252542;
+    --color-gray-900:#0c0c22;
+
+    --color-bg:hwb(240 95% 0%);
+
+    --transistion:all 300ms ease;
+
+    --container-width-lg:84%;
+    --container-width-md:92%;
+    --form-width:50%;
+
+    --radius-1:0.3rem;
+    --radius-2:0.6rem;
+    --radius-3:1rem;
+    --radius-4:2rem;
+}
+
+
+.admin__container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: 'josefin Sans','sans-serif';
+}
+
+.admins{
+    background: #db6d8328;
+    padding: 1rem;
+    border-radius: var(--radius-3);
+    display: flex;
+    gap: 1rem;
+    transition: var(--transistion) ;
+}
+
+.admins:hover{
+    box-shadow: 0 1rem 1.5rem rgba(39, 2, 56, 0.201) ;
+}
+
+.admins_avatar{
+    width: 7rem;
+    aspect-ratio: 1/1 ;
+    border: 50%;
+    border: 0.3 solid var(--color-bg);
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.admins_info p{
+    margin-top: 1rem;
+    color:var(--color-gray-900)
+}

@@ -1,0 +1,48 @@
+/* Footer.css */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  footer {
+    background-color: #070707; /* Baby pink color */
+    padding: 20px 0;
+    margin-top: auto;
+  }
+  
+  h3 {
+    color: #0d0d0e;
+    margin-bottom: 20px;
+  }
+  
+  h5 {
+    color: #0c0c0c;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 8px;
+  }
+  
+  ul li a {
+    color: #303336;
+    text-decoration: none;
+  }
+  
+  ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  p {
+    margin-top: 20px;
+    color: #fffafa;
+    font-weight: bold;
+  }
+  
